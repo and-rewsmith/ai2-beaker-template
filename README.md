@@ -56,7 +56,7 @@ source ./scripts/s3.sh
 3. Kick off a beaker job to conduct the transfer.
 
 ```
-beaker experiment create s3.yaml 
+beaker experiment create beaker/yaml/s3.yaml 
 ```
 
 4. Build the docker image. This build will produce an image named `dna-seq-models`. Once this image is pushed into Beaker, it does not allow you to overwrite it. So if this becomes an issue (changes to the model necessitating new image), you will need to edit the script to use a different image name.
